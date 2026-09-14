@@ -6,6 +6,10 @@ on:
     - cron: "0 */6 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: update-happy-valley-calendar
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -52,4 +56,10 @@ jobs:
                   data/sequences.json \
                   data/preview_events.json
           git commit -m "chore: refresh Happy Valley calendar from official HKJC feed"
-          git push
+          # Rebase onto remote in case another run (or manual push) landed first.
+          git pull --rebase origin main
+          if ! git push; then
+            echo "Push rejected — rebasing once more and retrying"
+            git pull --rebase origin main
+            git push
+          fi
