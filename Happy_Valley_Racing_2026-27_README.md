@@ -11,7 +11,7 @@ for the Hong Kong Jockey Club racing season **2026/2027**.
 2. Menu **File → New Calendar Subscription…**
 3. Paste:
 
-   `webcal://dario-apm-monaco.github.io/happy-valley-racing-calendar/happy-valley.ics`
+   `webcal://dariovirenque.github.io/happy-valley-racing-calendar/happy-valley.ics`
 
 4. Choose location **iCloud** (so it syncs to iPhone/iPad).
 5. **Do not** enable “Remove alarms” — keep the 1-day-before reminder.
@@ -19,7 +19,7 @@ for the Hong Kong Jockey Club racing season **2026/2027**.
 
 HTTPS fallback (same file):
 
-`https://dario-apm-monaco.github.io/happy-valley-racing-calendar/happy-valley.ics`
+`https://dariovirenque.github.io/happy-valley-racing-calendar/happy-valley.ics`
 
 > This is a **subscription**, not a one-time import. Events update when the
 > published ICS is regenerated from the official HKJC feed.
@@ -43,8 +43,8 @@ HTTPS fallback (same file):
 | Day meetings | 1 |
 | First meeting | 2026-09-09 |
 | Last meeting | 2027-07-14 |
-| Race-card CONFIRMED | 0 |
-| Season-fixture TENTATIVE | 39 |
+| Race-card CONFIRMED | 1 |
+| Season-fixture TENTATIVE | 38 |
 
 ### Non-Wednesday meetings
 

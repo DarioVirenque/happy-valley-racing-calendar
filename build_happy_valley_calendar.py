@@ -79,7 +79,14 @@ NIGHT_END = (23, 0)
 DAY_START = (13, 0)
 DAY_END = (18, 0)
 
-UA = "HappyValleyCalendarBuilder/1.0 (+local; educational; respects HKJC terms)"
+UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+PAGES_HOST = "dariovirenque.github.io"
+PAGES_BASE = f"https://{PAGES_HOST}/happy-valley-racing-calendar"
+SUBSCRIBE_WEBCAL = f"webcal://{PAGES_HOST}/happy-valley-racing-calendar/happy-valley.ics"
+SUBSCRIBE_HTTPS = f"{PAGES_BASE}/happy-valley.ics"
 
 
 def fetch(url: str, timeout: int = 45) -> str:
@@ -387,13 +394,25 @@ def enrich_first_race_times(meetings: list[dict[str, Any]]) -> None:
             print(f"  WARN racecard {m['date']}: {e}")
             continue
 
-        if "Happy Valley" not in html and "跑馬地" not in html:
-            continue
-
+        looks_hv = (
+            "Happy Valley" in html
+            or "跑馬地" in html
+            or "Racecourse=HV" in html
+            or "racecourse=hv" in html.lower()
+        )
         race_nos = sorted(
             {int(x) for x in re.findall(r"RaceNo=(\d+)", html) if 1 <= int(x) <= 14}
         )
+        if not looks_hv:
+            print(
+                f"  skip racecard {m['date']}: no HV markers "
+                f"(len={len(html)}, RaceNo={len(race_nos)})"
+            )
+            continue
         if len(race_nos) < 4:
+            print(
+                f"  skip racecard {m['date']}: only {len(race_nos)} RaceNo link(s)"
+            )
             continue
 
         programme: list[dict[str, Any]] = []
@@ -883,12 +902,8 @@ def write_readme(meetings: list[dict[str, Any]], changes: list[str]) -> None:
         else "- None — official feed matches PDF baseline date-for-date."
     )
 
-    subscribe_url = (
-        "webcal://dario-apm-monaco.github.io/happy-valley-racing-calendar/happy-valley.ics"
-    )
-    https_url = (
-        "https://dario-apm-monaco.github.io/happy-valley-racing-calendar/happy-valley.ics"
-    )
+    subscribe_url = SUBSCRIBE_WEBCAL
+    https_url = SUBSCRIBE_HTTPS
 
     text = f"""# Happy Valley Racing Calendar — 2026/27
 
