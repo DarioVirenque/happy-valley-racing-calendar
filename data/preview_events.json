@@ -118,19 +118,90 @@
     "day": "Sunday",
     "title": "🏇 Happy Valley — Day Race Meeting",
     "session": "Day",
-    "status": "TENTATIVE",
-    "time_source": "PROVISIONAL",
-    "start": "13:00",
-    "end": "18:00",
-    "first_race": "To be confirmed by HKJC",
+    "status": "CONFIRMED",
+    "time_source": "OFFICIAL",
+    "start": "12:45",
+    "end": "17:45",
+    "first_race": "12:45",
     "races": "10",
-    "races_source": "FIXTURE",
+    "races_source": "RACE_CARD",
     "special": "Only Happy Valley day meeting of the season",
     "provisional_programme": "2x1000m, 5x1200m, 2x1650m, 1x1800m",
-    "race_programme": [],
+    "race_programme": [
+      {
+        "no": 1,
+        "name": "DONGGUAN HANDICAP",
+        "time": "12:45",
+        "distance_m": 1200,
+        "class": "Class 5"
+      },
+      {
+        "no": 2,
+        "name": "FOSHAN HANDICAP",
+        "time": "13:15",
+        "distance_m": 1650,
+        "class": "Class 4"
+      },
+      {
+        "no": 3,
+        "name": "HUIZHOU HANDICAP",
+        "time": "13:45",
+        "distance_m": 1200,
+        "class": "Class 4"
+      },
+      {
+        "no": 4,
+        "name": "SHANTOU HANDICAP",
+        "time": "14:15",
+        "distance_m": 1000,
+        "class": "Class 4"
+      },
+      {
+        "no": 5,
+        "name": "THE HONG KONG COLLEGE OF EMERGENCY MEDICINE 30TH ANNIVERSARY CUP (HANDICAP)",
+        "time": "15:10",
+        "distance_m": 1200,
+        "class": "Class 4"
+      },
+      {
+        "no": 6,
+        "name": "SHENZHEN HANDICAP",
+        "time": "15:40",
+        "distance_m": 1800,
+        "class": "Class 4"
+      },
+      {
+        "no": 7,
+        "name": "THE KWANGTUNG HANDICAP CUP (HANDICAP)",
+        "time": "16:10",
+        "distance_m": 1200,
+        "class": "Class 2"
+      },
+      {
+        "no": 8,
+        "name": "ZHAOQING HANDICAP",
+        "time": "16:40",
+        "distance_m": 1000,
+        "class": "Class 3"
+      },
+      {
+        "no": 9,
+        "name": "ZHUHAI HANDICAP",
+        "time": "17:15",
+        "distance_m": 1650,
+        "class": "Class 3"
+      },
+      {
+        "no": 10,
+        "name": "GUANGZHOU HANDICAP",
+        "time": "17:50",
+        "distance_m": 1200,
+        "class": "Class 3"
+      }
+    ],
     "url": "https://www.hkjc.com/english/racinginfo/racing_cal.asp?d=20261101",
-    "description_standard": "Day race meeting at Happy Valley Racecourse.\nOnly Happy Valley day meeting of the season.\n\nTime: not yet published by the HKJC — the 13:00–18:00 slot is a placeholder.\nStatus: Provisional — race card not yet published\n\nProvisional programme (10 races): 2x1000m, 5x1200m, 2x1650m, 1x1800m\nSubject to amendment by the HKJC.\n\nRace info:\nhttps://www.hkjc.com/english/racinginfo/racing_cal.asp?d=20261101\n\nFixtures and race times may be amended or cancelled by the HKJC. Please check before attending.",
-    "description_full": "Day race meeting at Happy Valley Racecourse.\nOnly Happy Valley day meeting of the season.\n\nTime: not yet published by the HKJC — the 13:00–18:00 slot is a placeholder.\nStatus: Provisional — race card not yet published\n\nProvisional programme (10 races): 2x1000m, 5x1200m, 2x1650m, 1x1800m\nSubject to amendment by the HKJC.\n\nRace info:\nhttps://www.hkjc.com/english/racinginfo/racing_cal.asp?d=20261101\n\nFixtures and race times may be amended or cancelled by the HKJC. Please check before attending.\n\nGPS: 22.2706, 114.184\nTime source: PROVISIONAL\nRaces source: FIXTURE\nTrack surface: Turf (Happy Valley is turf-only)\n\nOfficial URLs:\nhttps://www.hkjc.com/english/racinginfo/racing_cal.asp?d=20261101\nhttps://racing.hkjc.com/racing/information/english/Racing/Fixture.aspx?CalMonth=11&CalYear=2026\nhttps://racing.hkjc.com/racing/information/English/Racing/RaceCard.aspx?RaceDate=2026/11/01&Racecourse=HV&RaceNo=1\n\nPrimary sources:\nhttps://res.hkjc.com/racingnews/wp-content/uploads/sites/3/2026/07/fixture_26-27.pdf\nhttps://calendar.google.com/calendar/ical/gturu5cp1tfpdgmlio8tinhlis%40group.calendar.google.com/public/basic.ics\nhttps://racingnews.hkjc.com/english/2026/07/20/racing-fixtures-2026-2027-season/"
+    "description_standard": "Day race meeting at Happy Valley Racecourse.\nOnly Happy Valley day meeting of the season.\n\nFirst race: 12:45 HKT\nStatus: Confirmed — official race card published\n\nRace card (10 races):\n1. 12:45 - 1200m - Class 5\n2. 13:15 - 1650m - Class 4\n3. 13:45 - 1200m - Class 4\n4. 14:15 - 1000m - Class 4\n5. 15:10 - 1200m - Class 4\n6. 15:40 - 1800m - Class 4\n7. 16:10 - 1200m - Class 2\n8. 16:40 - 1000m - Class 3\n9. 17:15 - 1650m - Class 3\n10. 17:50 - 1200m - Class 3\n\nFull card:\nhttps://racing.hkjc.com/racing/information/English/Racing/RaceCard.aspx?RaceDate=2026/11/01&Racecourse=HV&RaceNo=1\n\nFixtures and race times may be amended or cancelled by the HKJC. Please check before attending.",
+    "description_full": "Day race meeting at Happy Valley Racecourse.\nOnly Happy Valley day meeting of the season.\n\nFirst race: 12:45 HKT\nStatus: Confirmed — official race card published\n\nRace card (10 races):\n1. 12:45 - 1200m - Class 5\n2. 13:15 - 1650m - Class 4\n3. 13:45 - 1200m - Class 4\n4. 14:15 - 1000m - Class 4\n5. 15:10 - 1200m - Class 4\n6. 15:40 - 1800m - Class 4\n7. 16:10 - 1200m - Class 2\n8. 16:40 - 1000m - Class 3\n9. 17:15 - 1650m - Class 3\n10. 17:50 - 1200m - Class 3\n\nFull card:\nhttps://racing.hkjc.com/racing/information/English/Racing/RaceCard.aspx?RaceDate=2026/11/01&Racecourse=HV&RaceNo=1\n\nFixtures and race times may be amended or cancelled by the HKJC. Please check before attending.\n\nGPS: 22.2706, 114.184\nTime source: OFFICIAL\nRaces source: RACE_CARD\nTrack surface: Turf (Happy Valley is turf-only)\n\nOfficial URLs:\nhttps://www.hkjc.com/english/racinginfo/racing_cal.asp?d=20261101\nhttps://racing.hkjc.com/racing/information/english/Racing/Fixture.aspx?CalMonth=11&CalYear=2026\nhttps://racing.hkjc.com/racing/information/English/Racing/RaceCard.aspx?RaceDate=2026/11/01&Racecourse=HV&RaceNo=1\n\nPrimary sources:\nhttps://res.hkjc.com/racingnews/wp-content/uploads/sites/3/2026/07/fixture_26-27.pdf\nhttps://calendar.google.com/calendar/ical/gturu5cp1tfpdgmlio8tinhlis%40group.calendar.google.com/public/basic.ics\nhttps://racingnews.hkjc.com/english/2026/07/20/racing-fixtures-2026-2027-season/"
   },
   {
     "date": "2026-11-04",
