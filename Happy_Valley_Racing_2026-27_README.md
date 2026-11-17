@@ -38,17 +38,18 @@ HTTPS fallback (same file):
 
 | Metric | Value |
 | ------ | ----- |
-| Happy Valley meetings | 39 |
-| Night meetings | 38 |
+| Happy Valley meetings | 40 |
+| Night meetings | 39 |
 | Day meetings | 1 |
 | First meeting | 2026-09-09 |
 | Last meeting | 2027-07-14 |
 | Race-card CONFIRMED | 1 |
-| Season-fixture TENTATIVE | 38 |
+| Season-fixture TENTATIVE | 39 |
 
 ### Non-Wednesday meetings
 
 - 2026-11-01 (Sunday) — 🏇 Happy Valley — Day Race Meeting
+- 2026-12-29 (Tuesday) — 🏇 Happy Valley Race Meeting
 - 2027-02-11 (Thursday) — 🏇 Happy Valley — Special Thursday Race Meeting
 
 ### Special / named meetings
@@ -61,7 +62,8 @@ HTTPS fallback (same file):
 
 ### Feed vs PDF baseline
 
-- None — official feed matches PDF baseline date-for-date.
+- ADDED in official feed (not in PDF baseline): 2026-12-29
+- COUNT drift: expected 39 Happy Valley meetings from baseline, official feed currently has 40
 
 ## Sources
 
